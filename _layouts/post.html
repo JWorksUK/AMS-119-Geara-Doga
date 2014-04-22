@@ -2,12 +2,13 @@
 layout: base
 ---
 
-<div class="post-cover">
+{% if page.cover_image %}
+<div class="post-cover" style="background-image:url(/images/{{ page.cover_image }});">
     <div class="wrap">
-        <img src="http://placehold.it/350x150" alt=""/>
+        <img src="/images/{{ page.cover_image }}" alt=""/>
     </div>
 </div>
-
+{% endif %}
 <div id="mainWrap">
     <div class="post">
         <h2 class="post-title">{{ page.title }}</h2>

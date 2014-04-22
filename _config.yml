@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: AMS-119 Geara Doga
+
 markdown: redcarpet
 pygments: true
 
@@ -20,20 +21,21 @@ info:
     #tumblr:     'http://staff.tumblr.com/'
 
 
-url: http://incorporated.sendtoinc.com
-
+    # Google Fonts
+    # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
+    googlefont: 'Roboto:400,400italic,700,700italic'
 
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets
 #
 assets:
 
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/css
-  css_compressor: sass
-  cachebust: none
-  cache: false
-  gzip: [ text/css, application/javascript ]
-  debug: false
+    dirname: assets
+    baseurl: /assets/
+    sources:
+      - _assets/css
+    css_compressor: sass
+    cachebust: none
+    cache: false
+    gzip: [ text/css, application/javascript ]
+    debug: false
