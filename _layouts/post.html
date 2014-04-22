@@ -3,9 +3,9 @@ layout: base
 ---
 
 {% if page.cover_image %}
-<div class="post-cover" style="background-image:url(/images/{{ page.cover_image }});">
+<div class="post-cover" style="background-image:url({{site.baseurl}}/images/{{ page.cover_image }});">
     <div class="wrap">
-        <img src="/images/{{ page.cover_image }}" alt=""/>
+        <img src="{{site.baseurl}}/images/{{ page.cover_image }}" alt=""/>
     </div>
 </div>
 {% endif %}

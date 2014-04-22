@@ -25,13 +25,15 @@ info:
     # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
     googlefont: 'Roboto:400,400italic,700,700italic'
 
+baseurl: /blog
+
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets
 #
 assets:
 
     dirname: assets
-    baseurl: /assets/
+    baseurl: /blog/assets/
     sources:
       - _assets/css
     css_compressor: sass
