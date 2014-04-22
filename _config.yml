@@ -1,0 +1,39 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+
+info:
+    # Site Info
+    title: AMS-119 Geara Doga
+    tagline: This is a tagline whats up
+    description: The AMS-119 Geara Doga is a mass-production general-purpose mobile suit.
+    cover_image: blog-cover.jpg
+
+    # Social Networking
+    facebook:   jworksuk
+    twitter:    jworksuk
+    instagram:  jworksuk
+    linkedin:   'pub/jesse-james/21/965/145'
+    #foursquare: jworksuk
+    github:     jworksuk
+    #gplus:      '101183822199340201470'
+    #tumblr:     'http://staff.tumblr.com/'
+
+
+url: http://incorporated.sendtoinc.com
+
+
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
+assets:
+
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/css
+  css_compressor: sass
+  cachebust: none
+  cache: false
+  gzip: [ text/css, application/javascript ]
+  debug: false

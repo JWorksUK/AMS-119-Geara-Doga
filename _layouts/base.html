@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Base</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
+
+        {% stylesheet style %}
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+    </head>
+    <body>
+        <header id="header">
+            <div class="wrap">
+                <div class="info">
+                    <h1><a href="#">{{ site.info.title }}</a></h1>
+                </div>
+                <div class="tagline">
+                    <p class="copyright-info">{{ site.info.tagline }}</p>
+                </div>
+            </div>
+        </header>
+
+        {{ content }}
+
+        <footer id="footer">
+            <div class="wrap">
+                <div class="info">
+                    <p class="copyright-info">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.info.title }}. All rights reserved.</p>
+                </div>
+                
+                <div class="social-links">
+                    {% if site.info.facebook %}
+                        <a href="http://www.facebook.com/{{ site.info.facebook }}/" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+                    {% endif %}
+
+                    {% if site.info.twitter %}
+                        <a href="http://www.twitter.com/{{ site.info.twitter }}/" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+                    {% endif %}
+
+                    {% if site.info.instagram %}
+                        <a href="http://www.instagram.com/{{ site.info.instagram }}/" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
+                    {% endif %}
+
+                    {% if site.info.linkedin %}
+                        <a href="http://www.linkedin.com/{{ site.info.linkedin }}/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
+                    {% endif %}
+
+                    {% if site.info.foursquare %}
+                        <a href="https://foursquare.com/{{ site.info.foursquare }}/" target="_blank"><i class="fa fa-foursquare fa-fw"></i></a>
+                    {% endif %}
+
+                    {% if site.info.github %}
+                        <a href="https://github.com/{{ site.info.github }}/" target="_blank"><i class="fa fa-github fa-fw"></i></a>
+                    {% endif %}
+
+                    {% if site.info.gplus %}
+                        <a href="https://plus.google.com/{{ site.info.gplus }}/" target="_blank"><i class="fa fa-google-plus fa-fw"></i></a>
+                    {% endif %}
+
+                    {% if site.info.tumblr %}
+                        <a href="{{ site.info.tumblr }}" target="_blank"><i class="fa fa-tumblr fa-fw"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

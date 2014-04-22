@@ -1,0 +1,53 @@
+@media (max-width: 800px) {
+    .post {
+        margin: 0 10% 30px;
+
+        .full {
+            margin: 1em 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-cover {
+        h3 {
+            margin: 0 15%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .blog-cover {
+        h1 {
+            margin: 0 5%;
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    #footer {
+        .info, .social-links {
+            width: 100%;
+            text-align: center;
+        }
+
+        .info {
+            margin-bottom: 20px;
+
+            .copyright-info {
+                margin: 0;
+            }
+        }
+
+        .social-links {
+            a {
+                &:last-child {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

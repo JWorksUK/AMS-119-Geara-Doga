@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<div class="post-cover">
+    <div class="wrap">
+        <img src="http://placehold.it/350x150" alt=""/>
+    </div>
+</div>
+
+<div id="mainWrap">
+    <div class="post">
+        <h2 class="post-title">{{ page.title }}</h2>
+        <p class="post-date">{{ page.date | date: "%-d %B, %Y" }}</p>
+
+        {{ content }}
+    </div>
+</div>

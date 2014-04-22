@@ -1,0 +1,246 @@
+/*
+BASE
+------------------------------------------------------------------- */
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    font-family: $bodyfont;
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: left;
+    background: $white;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: $col1;
+    &:hover, &:active, &:focus{
+        outline:none;
+    }
+}
+
+/*
+STRUCTURE
+----------------------------------------------------------------------------- */
+
+#mainWrap {
+    margin: 0 auto;
+    padding: 3em 0 0;
+    position: relative;
+    max-width: 1200px;
+    @extend .clearfix;
+}
+
+.wrap{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    max-width: 1200px;
+    @extend .clearfix;
+}
+
+
+
+/*
+POST
+----------------------------------------------------------------------------- */
+
+.post {
+    margin: 0 25% 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey;
+
+    p {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .full {
+        margin: 1em -10em;
+        padding: 0;
+        text-align: center;
+
+        img {
+            margin: 0;
+            max-width: 100%;
+        }
+    }
+}
+
+.post-title {
+    margin: 0 0 10px;
+
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        color: $col1;
+    }
+}
+
+.post-date {
+    font-size: 12px;
+    color: $grey;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/*
+HEADER
+----------------------------------------------------------------------------- */
+
+#header {
+    width: 100%;
+    background: $white;
+    height: 80px;
+    @include box-shadow(0 0 1px 1px rgba(0, 0, 0, 0.1));
+
+    .wrap {
+        max-width: 960px;
+    }
+
+    .info, .tagline {
+        width: 50%;
+        display: inline-block;
+        float: left;
+        height: 80px;
+    }
+
+    .info {
+        h1 {
+            margin: 0 0 0 5%;
+            padding: 0;
+            line-height: 80px;
+            font-size: 20px;
+
+            a {
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .tagline {
+        font-size: 14px;
+        line-height: 80px;
+        text-align: right;
+
+        p {
+            margin: 0 5% 0 0;
+        }
+    }
+}
+
+/*
+COVERS
+----------------------------------------------------------------------------- */
+
+.post-cover, .blog-cover {
+    max-width: 100%;
+    margin-top: 0;
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+    background: $grey;
+    height: 70%;
+}
+
+.blog-cover {
+    background-color: $darkgrey;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+
+    .wrap {
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    h1, h3 {
+        color: $white;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    a {
+        margin: 20px 10px 0;
+        display: inline-block;
+        color: $white;
+    }
+}
+
+.post-cover {
+    height: 300px;
+
+    img {
+        display: none;
+    }
+}
+
+/*
+FOOTER
+----------------------------------------------------------------------------- */
+
+#footer {
+    background: $lightergrey;
+    color: $lightgrey;
+    font-size: 12px;
+    margin: 4em 0 0;
+    padding: 5em 0;
+
+    .wrap {
+        max-width: 960px;
+    }
+
+    .info, .social-links {
+        width: 50%;
+        display: inline-block;
+        float: left;
+    }
+
+    .info {
+        .copyright-info {
+            margin: 0 0 0 5%;
+            font-size: 10px;
+        }
+    }
+
+    .social-links {
+        text-align: right;
+
+        a {
+            display: inline-block;
+            color: #666;
+            margin: 0 5px;
+            @include transitions(all 0.4s ease-in-out);
+
+            &:hover {
+                color: $col1;
+                @include transform(1.5, 1.5); 
+            }
+
+            &:last-child {
+                margin: 0 5% 0 5px;
+            }
+        }
+    }
+}

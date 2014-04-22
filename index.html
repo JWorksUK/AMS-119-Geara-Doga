@@ -1,0 +1,23 @@
+---
+layout: base
+title: Your New Jekyll Site
+---
+
+<div class="blog-cover" style="background-image:url(/images/{{ site.info.cover_image }});">
+    <div class="wrap">
+        <h1>{{ site.info.title }}</h1>
+        <h3>{{ site.info.description }}</h3>
+        
+        <a href="#"><i class="fa fa-rss fa-2x"></i></a>
+    </div>
+</div>
+
+<div id="mainWrap">
+    {% for post in site.posts %}
+        <div class="post">
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="post-date">{{ post.date | date: "%-d %B, %Y" }}</p>
+            {{ post.excerpt }}
+        </div>
+    {% endfor %}
+</div>
