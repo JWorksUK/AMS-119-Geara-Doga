@@ -11,14 +11,14 @@ info:
     cover_image: blog-cover.jpg
 
     # Social Networking
-    facebook:   jworksuk
-    twitter:    jworksuk
-    instagram:  jworksuk
-    linkedin:   'pub/jesse-james/21/965/145'
-    #foursquare: jworksuk
-    github:     jworksuk
-    #gplus:      '101183822199340201470'
-    #tumblr:     'http://staff.tumblr.com/'
+    facebook:   facebook
+    twitter:    twitter
+    instagram:  instagram
+    linkedin:   'pub/xxxx/xx/xxx/xxx'
+    foursquare: foursquare
+    github:     github
+    gplus:      '101183822199340201470'
+    tumblr:     'http://staff.tumblr.com/'
 
 
     # Google Fonts
@@ -26,6 +26,7 @@ info:
     googlefont: 'Roboto:400,400italic,700,700italic'
 
 baseurl: /blog
+paginate: 10
 
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets

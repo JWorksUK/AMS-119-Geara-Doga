@@ -7,16 +7,31 @@ layout: base
         <h1>{{ site.info.title }}</h1>
         <h3>{{ site.info.description }}</h3>
         
-        <a href="#"><i class="fa fa-rss fa-2x"></i></a>
+        <!-- <a href="#"><i class="fa fa-rss fa-2x"></i></a> -->
     </div>
 </div>
 
 <div id="mainWrap">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
         <div class="post">
             <h2 class="post-title"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
             <p class="post-date">{{ post.date | date: "%-d %B, %Y" }}</p>
             {{ post.excerpt }}
         </div>
     {% endfor %}
+
+    {% if paginator.previous_page  || paginator.next_page %}
+    <div class="post pagination">
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a href="/" class="previous-page">‹ Newer</a>
+            {% else %}
+                <a href="/page{{ paginator.previous_page }}" class="previous-page">‹ Newer</a>
+            {% endif %}
+        {% endif %}
+        {% if paginator.next_page %}
+            <a href="/page{{ paginator.next_page }}" class="next-page">Older ›</a>
+        {% endif %}
+    </div>
+    {% endif %}
 </div>
