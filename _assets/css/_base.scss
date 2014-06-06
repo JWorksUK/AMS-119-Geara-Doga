@@ -101,8 +101,10 @@ POST
 }
 
 .pagination {
+    min-height: 24px;
     a {
         text-decoration: none;
+        display: inline;
 
         &.next-page {
             float: right;

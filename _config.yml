@@ -25,8 +25,10 @@ info:
     # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
     googlefont: 'Roboto:400,400italic,700,700italic'
 
-baseurl: /blog
+baseurl: /
+
 paginate: 10
+paginate_path: "page/:num"
 
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets
@@ -34,7 +36,7 @@ paginate: 10
 assets:
 
     dirname: assets
-    baseurl: /blog/assets/
+    baseurl: /assets/
     sources:
       - _assets/css
     css_compressor: sass
